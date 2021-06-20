@@ -11,7 +11,7 @@ int setbit(int mask,int num)
 int main()
 {
   int mask,num;
-  scanf(%d%d,&mask,&num);
+  scanf("%d%d",&mask,&num);
   a=setbit(mask,num);
   printf("%d",a);
   return 0;
