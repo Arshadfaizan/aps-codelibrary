@@ -5,7 +5,7 @@ int arr[n];
 
 void initialize()
 {
-    int i;
+    int i,n=6;
     for(i = 0; i<n; i++)
         arr[i] = i;
 }
