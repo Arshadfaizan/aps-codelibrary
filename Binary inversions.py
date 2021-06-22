@@ -1,0 +1,9 @@
+n,a,x=map(int,input().split())
+b=n-a
+if(x>a*b):
+    print(-1)
+else:
+    i=int(x/b)
+    j=int(x%b)
+    ars=[0]*(n-i-b-1)+[1]*(j)+[0]+[1]*(b-j)+[0]*i
+    print(*ars)
