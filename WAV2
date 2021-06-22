@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+ 
+int main(){
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    std::cout.tie(NULL);
+    ll N,Q;
+    std::cin>>N>>Q;
+    ll ars[N];
+    for(ll i=0;i<N;i++)
+        cin>>ars[i];
+    sort(ars,ars+N);
+    for(ll i=0;i<Q;i++){
+        ll x;
+        std::cin>>x;
+        ll pos=lower_bound(ars,ars+N,x)-ars;
+        if(pos<N && ars[pos]==x)
+            std::cout<<0<<endl;
+        else if(pos%2==0)
+            std::cout<<"POSITIVE"<<endl;
+        else
+           std::cout<<"NEGATIVE"<<endl;
+ 
+    }
+}
